@@ -1,0 +1,35 @@
+.qcf-style.default {
+	width:250px;
+}
+.qcf-style.default input[type=text], .qcf-style.default textarea, .qcf-style.default select, .qcf-style.default #submit {
+	border-radius:0;
+}
+.qcf-style.default p, .qcf-style.default select {
+	font-family: arial, sans-serif;
+	font-size: 1.2em;
+	color: #717171;
+	height:auto;
+	;
+}
+.qcf-style.default input[type=text], .qcf-style.default textarea, .qcf-style.default select {
+	border: 1px solid #222222;
+	font-family: arial, sans-serif;
+	font-size: 1.2em;
+color:;;
+	height:auto;
+	background:none;
+	border-radius:5px;
+}
+.qcf-style.default input[type=text].required, .qcf-style.default select.required, .qcf-style.default textarea.required {
+	border: 1px solid #222222;
+}
+.qcf-style.default #submit, .qcf-style.default #submit:hover {
+	float:left;
+	width:50%;
+	color:#FFF;
+	background:#717171;
+border:;
+	font-family: arial, sans-serif;
+	font-size: inherit;
+	border-radius:5px;
+}

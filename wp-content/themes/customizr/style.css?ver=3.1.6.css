@@ -1,0 +1,96 @@
+/**
+ * Theme Name: Customizr
+ * Theme URI: http://www.themesandco.com/customizr
+ * Description:  Enjoy designing a beautiful website live with the WP customizer : select skin, logo, social profiles, sliders, layout, home featured blocks, or even live css styling. The flat and fully responsive design can be used for small businesses, portfolios, blogs, corporate sites or landing pages. Built with valid HTML5 and CSS3 (from the Twitter Bootstrap), cross-browser tested, the theme is translation ready and available in 15 languages. Ready for WooCommerce, bbPress, qTranslate, the code is easily extensible with a comprehensive API of hooks.
+ * Version: 3.1.6
+ * Author: nikeo
+ * Author URI: http://www.themesandco.com/
+ * Tags: gray, white, light, blue, red, yellow, green, purple, orange, black, one-column, two-columns, three-columns, left-sidebar, right-sidebar, fluid-layout, responsive-layout, custom-menu, featured-images, full-width-template, theme-options, threaded-comments, translation-ready, sticky-post, post-formats, rtl-language-support, editor-style
+ * Text Domain: customizr
+ * Copyright: (c) 2013 Nicolas GUILLAUME (nikeo), Nice, France
+ * License: GNU General Public License v2.0 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.php
+ */
+
+
+/**
+ * The styleheets of Customizr are located in inc/css. Each skin has its own stylesheet : blue.css, green.css, ...
+ *
+ * IMPORTANT : If you write your CSS code below, it will be deleted when you'll update the theme.
+ * If you want to style the css of Customizr, you can either use the Custom CSS section in the customizer (which will not be lost on update) OR create a child theme (recommended if you do many customizations) and add your css code in the style.css file of it.
+ */
+ .top_bg{
+	 /*background:url(inc/img/top_bg.png) repeat-x top;*/
+	 background:url(inc/css/img/top_bg.png) repeat-x top;
+	 /*height:189px;*/
+ 
+ }
+ 
+  .top_bg1{
+	 /*background:url(inc/img/top_bg1.png) repeat-x top;*/
+	 background:url(inc/css/img/top_bg1.png) repeat-x top;
+	 height:419px;
+	 /*width:100%;*/
+	 padding-right:20px;
+ 
+ }
+ 
+ /*.logo{
+	 background:url(inc/img/logo.png) no-repeat;
+	 width:301px;
+	 height:91px;
+	
+ }*/
+ 
+ 
+ .logo{
+	 background:url(inc/img/logo.png) no-repeat left;
+	 
+	 height:91px;
+
+ }
+ @media only screen and (max-width: 650px) {
+	#logo {
+		background: url(inc/img/logo.png) center no-repeat;
+		height: 91px; /* define height of image */
+	}
+}
+
+.mobileno{
+	background:
+	url(inc/css/img/mobile.gif) no-repeat  ;
+	/*width:23px;*/
+	height:27px;
+	
+	
+}
+.num{
+	padding:3px 0 0 20px;
+}
+ 
+ .footer_content{
+	 background:url(inc/css/img/footer_content.gif) top repeat-x;
+	 height:383px; 
+ }
+ 
+ 
+ 
+ .menu-entry-thumbnail img{
+	 border:3px solid #ff6600;
+	 border-radius:25px;
+	 box-shadow: 1px 5px 3px #888888;
+	 
+	 -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
+-moz-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+ }
+ 
+ .menu-entry-thumbnail img:focus{
+	outline: none;
+    border-color: #ff6600;
+    box-shadow: 0 0 10px #888888;
+ }
+
+
+ 
