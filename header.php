@@ -1,9 +1,4 @@
-
-
-
-
-
-
+<?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/connection.php'); ?>
 <!DOCTYPE html>
 <!--[if IE 7]>
 <html class="ie ie7" lang="en-US">

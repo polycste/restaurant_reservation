@@ -1,6 +1,5 @@
 <?php require_once('header.php') ?>
 
-
 <div class="slider">
 </div>
 
@@ -8,9 +7,6 @@
 
 
 <div id="main-wrapper " class="container">
-
- 
-
 
     <div class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb"><span class="trail-begin"><a href="index.php" title="sevenhillrestaurant" rel="home" class="trail-begin">Home</a></span> <span class="sep">&raquo;</span> <span class="trail-end">Online Reservation</span></div><div class="tc-hot-crumble container" role="navigation"><div class="row"><div class="span12"></div></div></div>    
     <div class="container" role="main">
@@ -76,17 +72,17 @@ For more details please call = 9614855, 9632221</p>
 	</div>
 </div>
 <script type="text/javascript">var date_format = 'dd/mm/yy';var time_format ="h:mm tt";var locale = "en_US";</script>
-<form id="redi-reservation" name="redi-reservation" method="post">
+<form id="redi-reservation" action="tablebooking_process.php" name="redi-reservation" method="post">
 
 	<div id="step1">
 		
                  <h2 style="float:left;"> Step 1: Select date and time</h2><a href="index.php%3Fp=48.php#cancel" id="cancel-reservation" class="cancel-reservation">Cancel reservation</a>
             <input type="hidden" id="placeID" name="placeID" value="5506"/>
-         		<br clear="both"/><label for="redi-restaurant-startDate">Date:<span class="redi_required">*</span></label><br clear="both"/>
-		<input type="text" value="10/05/2015" name="startDate" id="redi-restaurant-startDate"/>
+         		<br clear="both"/><label for="redi-restaurant-startDate">Start Date:<span class="redi_required">*</span></label><br clear="both"/>
+		<input type="text" value="20150605013226" name="startDate" id="redi-restaurant-startDate"/>
         <br clear="both"/>
-        <br clear="both"/><label for="redi-restaurant-startHour">Time:<span class="redi_required">*</span></label><br clear="both"/>
-					<input id="redi-restaurant-startTime" type="text" value="8:00 pm" name="startTime"/><br clear="both"/>
+        <br clear="both"/><label for="redi-restaurant-startHour">End Date:<span class="redi_required">*</span></label><br clear="both"/>
+					<input id="redi-restaurant-startTime" type="text" value="20150605015026" name="endDate"/><br clear="both"/>
 				<input id="redi-restaurant-startDateISO" type="hidden" value="2015-05-10" name="startDateISO"/>
 		<br clear="both"/><label for="persons">Persons:<span class="redi_required">*</span></label><br clear="both"/>
 
