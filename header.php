@@ -1,3 +1,4 @@
+<?php session_start();  ?>
 <?php require_once($_SERVER['DOCUMENT_ROOT'].'/admin/connection.php'); ?>
 <!DOCTYPE html>
 <!--[if IE 7]>
@@ -170,7 +171,26 @@ jQuery(document).ready( function($){
 				alt="Follow Us on LinkedIn" 
 				title="Follow Us on LinkedIn" style="opacity: 1; -moz-opacity: 1;" class="fade" /></a><a href="https://twitter.com/‎" rel="nofollow" target="_blank"><img width="32" height="32" src="wp-content/plugins/social-media-widget/images/default/32/twitter.png" 
 				alt="Follow Us on Twitter" 
-				title="Follow Us on Twitter" style="opacity: 1; -moz-opacity: 1;" class="fade" /></a></div></div></div></div></div>                     </div>
+				title="Follow Us on Twitter" style="opacity: 1; -moz-opacity: 1;" class="fade" /></a></div></div></div></div>
+               
+                       
+                       
+<?php  if(isset($_SESSION['user_email'])) {
+       echo 'You are logged in';
+       ?>
+  
+       <a href="logout.php">Logout</a>
+       <?php
+
+       }
+      else { ?>
+      <a href="login.php">Sign in</a>
+       <a href="register.php">Sign up</a>
+     <?php
+     } ?>             
+                        
+  
+                       </div>                     </div>
                      
                      <div class=" row" >
                      <div class=" offset10">

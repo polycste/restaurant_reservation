@@ -8,9 +8,10 @@ Dk Tower,Level &#8211; 7,<br />
 94 Bir Uttam C.R. Datta Road<br />
 (Old Sonargaon Road),Banglamotor,<br />
 Dhaka – 1205, Bangladesh<br />
-Mob : 01751703560, 01751703569<br />
+Mob : 01834063413, 01751703569<br />
 Tel : 9614855<br />
-E-mail: info@sevenhillrestaurant.net</div>
+E-mail: info@sevenhillrestaurant.net<br>
+              polycste@gmail.com</div>
 <div class="span6" style="padding-left: 40px;"><span style="color: #cb4d00; font-size: 18px;">OUR LOCATIONS</span><br />
 BANGLAMOTOR, DHANMONDI, DHAKA, BANGLADESH<br />
 Located at the eighth floor of Dk Tower,<br />
@@ -60,9 +61,9 @@ A-la carte &#8211; 12.30pm to 10.30 pm</div>
 			zoom: 14,
 			markers: [
 				{
-					address: "Seven Hill Sonargaon Rd, Dhaka, Bangladesh",
+					address: "Seven Hill Sonargaon R0ad, Dhaka, Bangladesh",
 					popup: true,
-					html: "Seven Hill Sonargaon Rd, Dhaka, Bangladesh"
+					html: "Seven Hill Sonargaon R0ad, Dhaka, Bangladesh"
 				}
 			],
 			controls: {

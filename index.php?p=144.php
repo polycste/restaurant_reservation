@@ -38,7 +38,7 @@
         <div class="entry-content">
             <p>We would like to inform you that your reservation request has been accepted and its primary confirm.<br />
 For final confirmation Sevenhill will contact with you by your cell or email<br />
-For more details please call = 9614855, 9632221</p>
+For more details please call = 9614855, 9632221 , 01834063413</p>
 <!-- ReDi restaurant reservation plugin version 14.0630 -->
 <div id="cancel-reservation-div" style="display: none">
 

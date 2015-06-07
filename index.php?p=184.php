@@ -4,7 +4,7 @@
 <div class="slider">
 </div>
 
-</div>		
+	
 
 
 <div id="main-wrapper " class="container">
