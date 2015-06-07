@@ -1,7 +1,7 @@
 <?php
 require_once('header.php');
 $customeremail = $_SESSION['user_email'];
-
+echo '<br><div style="text-align:center; padding:5px">';
 ?>
 
 <?php
@@ -42,14 +42,14 @@ $result3 = $conn->query($sql3);
 if ($result3->num_rows > 0) {
     // output data of each row
     while($row3 = $result3->fetch_assoc()) {
-      echo  $customerid = $row3["customer_id"];
+        $customerid = $row3["customer_id"];
     }
 } 
           
           $sql2 = "INSERT INTO `reservation` (`id`, `user_id`, `table_id`, `reservation_start`, `reservation_end`, `seats`, `active`) VALUES (NULL, '$customerid', '$tableid', '$start', '$end', '$person', '1')";
 
 if ($conn->query($sql2) === TRUE) {
-     echo "We have booked table serial no " . $tableid . " only for you. Please dont forget to come our restaurant";
+     echo 'We have booked table serial no ' . $tableid . ' only for you. Please dont forget to come our restaurant in time.';
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
@@ -61,7 +61,7 @@ if ($conn->query($sql2) === TRUE) {
     echo "Sorry at this moment we have not so many table";
 }
 
-
+echo '</br><div style="clear:both"></div>';
 
 $conn->close();
 ?> 

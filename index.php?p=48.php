@@ -79,10 +79,10 @@ For more details please call = 9614855, 9632221</p>
                  <h2 style="float:left;"> Step 1: Select date and time</h2><a href="index.php%3Fp=48.php#cancel" id="cancel-reservation" class="cancel-reservation">Cancel reservation</a>
             <input type="hidden" id="placeID" name="placeID" value="5506"/>
          		<br clear="both"/><label for="redi-restaurant-startDate">Start Date:<span class="redi_required">*</span></label><br clear="both"/>
-		<input type="text" value="2015-06-05-01:32:26" name="startDate" id="redi-restaurant-startDate"/>
+		<input type="text" value="2015-06-05-01:00:00" name="startDate" id="redi-restaurant-startDate"/>
         <br clear="both"/>
         <br clear="both"/><label for="redi-restaurant-startHour">End Date:<span class="redi_required">*</span></label><br clear="both"/>
-					<input id="redi-restaurant-startTime" type="text" value="2015-06-05-01:50:26" name="endDate"/><br clear="both"/>
+					<input id="redi-restaurant-startTime" type="text" value="2015-06-05-03:00:00" name="endDate"/><br clear="both"/>
 				<input id="redi-restaurant-startDateISO" type="hidden" value="2015-05-10" name="startDateISO"/>
 		<br clear="both"/><label for="persons">Persons:<span class="redi_required">*</span></label><br clear="both"/>
 
@@ -104,7 +104,15 @@ For more details please call = 9614855, 9632221</p>
 
         <div id="large_groups_message" style="display: none;margin-top: 30px;" class="redi-reservation-alert-info redi-reservation-alert"></div>
 		<div style="margin-top: 30px;">
-			<input class="redi-restaurant-button" id="step1button" type="submit" value="Check available time" name="submit">
+ <?php      if(isset($_SESSION['user_email'])) { ?>
+			<input class="redi-restaurant-button" id="step1button" type="submit" value="Check available time and book" name="submit">
+<?php
+} else
+  {
+  echo 'You have to logged in to submit';
+}
+      ?>
+
 			<img id="step1load" style="display: none;" src="wp-content/plugins/redi-restaurant-reservation/img/ajax-loader.gif" alt=""/>
 		</div>
         <br clear="both"/>
